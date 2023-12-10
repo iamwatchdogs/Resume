@@ -1,0 +1,280 @@
+%-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\footskip}{4.08003pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=1cm, right=1.4cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\footskip}{4.08003pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Nakka Shamith} % Your Name
+\newcommand{\course}{Bachelor of Technology} % Your Program
+\newcommand{\roll}{20981A05C0} % Your Roll No.
+\newcommand{\phone}{9014781225} % Your Phone Number
+\newcommand{\emaila}{shamith301102@gmail.com} %Email 1
+\newcommand{\emailb}{20981a05c0@raghuenggcollege.in} %Email 2
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+
+\parbox{2.6cm}{%
+\includegraphics[width=2.35cm,clip]{photo.jpeg}
+}
+\parbox{\dimexpr\linewidth-2.9cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +91-\phone}\\
+  {Roll No.: \roll} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+  \course &  \href{mailto:\emailb}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emailb}}\\
+  {Computer Science and Engineering} &  \href{https://github.com/iamwatchdogs/}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {iamwatchdogs}} \\
+  {Raghu Engineering College, Vizag.} & \href{https://www.linkedin.com/in/shamith-n-02b535226}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {Shamith Nakka}}
+\end{tabularx}
+}
+
+
+
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Raghu Engineering College}{CGPA/Percentage: 8.56}
+      {B.Tech - CSE}{2020-24}
+    \resumeSubheading
+      {FIITJEE Junior College}{CGPA/Percentage: 8.21}
+      {Board of Intermediate Education, Andhra Pradesh}{2019-20}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {FOSSEE Summer Fellowship}{IIT Bombay, Mumbai}
+      {Summer Intern}{06/2023 - present}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Selected for working on an open source project called "Osdag"; my role is developing required GUI elements using the PyQt5 module.}
+    \item {Worked on Truss connection bolted module and developed the required GUI elements on to the module's Interface.}
+    \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+\vspace{-8.5mm}
+
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{Personal Projects}}
+\resumeSubHeadingListStart
+
+    \resumeProject
+      {Detection of Glaucoma Eye Disease} %Project Name
+      {A deep learning model used for glaucoma eye disease.} %Project Name, Location Name
+      {12/2023 - present} %Event Dates
+
+      \resumeItemListStart
+        \item {Tools \& technologies used: Numpy, Pandas, Matplotlib, Keras, Jupyter Notebook}
+        \item {This is a deep learning project that uses the Keras module at its core.}
+        \item {This DL model aims to improve the efficiency of computer-aided diagnostics systems both in terms of accuracy and cost-effectiveness.}
+        \item {The model is trained using ResNet50 from Keras, which 50 layered CNN model used for training huge datasets.}
+        \item {The model classifies the given data using InceptionV3 from Keras, which is a powerful classifier.}
+        \item {Using Keras as the core module to build the model helps us scale in large terms and migrate to different ML libraries with ease.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    
+    \resumeProject
+      {Notebook (Blog Website)} %Project Name
+      {A simple blog-responsive website fully functional with RSS feed, reaction and comments.} %Project Name, Location Name
+      {09/2023 - 09/2023} %Event Dates
+
+      \resumeItemListStart
+        \item {Tools \& technologies used: Markdown, Jekyll}
+        \item {This project uses the Jekyll framework, a static site generator built based on the Chipry theme. It is simple to use, markdown to static web page converting application.}
+        \item {This project also has configurable SEO options that replace the default open graph protocol of the generated websites.}
+        \item {This project is deployed and hosted on GitHub Pages without losing any of its functionality like RSS feed, reactions, comments, chronological order, search by name \& tags, e.t.c.,}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills and Interests}}
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Java, JavaScript, Python, YAML, HTML/CSS, Markdown} \\
+     \textbf{Developer Tools}{: VS Code, Eclipse, Jupyter Notebook, Conda Environment, Git, GitHub, WSL} \\
+     \textbf{Frameworks}{: Bootstrap, React, Jekyll} \\
+     \textbf{Cloud/Databases}{: MySQL} \\
+     \textbf{Soft Skills}{: Communication, Leadership, Presentation, Networking} \\
+     % \textbf{Coursework}{: AWS} \\
+     \textbf{Areas of Interest}{: Full-Stack and AI/ML} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+%-----------Positions of Responsibility-----------------
+\section{\textbf{Positions of Responsibility}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Main Maintainer, } % Position
+    {Grow-with-Open-Source} %Club,Event
+    {10/2023 - Present} %Tenure Period
+\resumePOR{Webmaster, } % Position
+    {IEEE SB, Raghu Engineering College} %Club,Event
+    {05/2023 - Present} %Tenure Period
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+
+
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{CodeKaze 2023 } % Award
+    {Won the competition with an all-India rank of 450.} % Event
+    {06/2023} %Event Year
+    
+\resumePOR{Sankhyatha 2022 } % Award
+    {Won First place in Tech Quiz in my college event.} % Event
+    {08/2022} %Event Year
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+%-------------------------------------------
+\end{document}
